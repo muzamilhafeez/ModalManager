@@ -1,4 +1,4 @@
-![stack Overflow](http://lmsotfy.com/so.png)
+![stack Overflow](custom_modal_library.jpg)
  # Modal Manager
 ### Key Points
 - It seems likely that your configuration object will work with a custom modal library, supporting dynamic creation, AJAX content loading, and nested modals up to three levels, which is deeper than typical systems.

@@ -1,0 +1,326 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Manager - 20 Examples</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1 class="display-4 mb-3">Modal Manager</h1>
+        <p class="lead">20 Practical Examples & Use Cases</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Example 1: Basic Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">1. Basic Modal</h5>
+          </div>
+          <div class="card-body">
+            <p>Simple modal with basic content and a close button.</p>
+            <button id="example1" class="btn btn-primary">
+              <i class="bi bi-box-arrow-up-right"></i> Open Modal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 2: Form Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">2. Form Modal</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with a form for user input and validation.</p>
+            <button id="example2" class="btn btn-primary">
+              <i class="bi bi-pencil-square"></i> Open Form
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 3: AJAX Content Loading -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">3. AJAX Content</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal that loads content dynamically via AJAX.</p>
+            <button id="example3" class="btn btn-primary">
+              <i class="bi bi-cloud-download"></i> Load Content
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 4: Nested Modals -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">4. Nested Modals</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with buttons to open additional modals on top.</p>
+            <button id="example4" class="btn btn-primary">
+              <i class="bi bi-layers"></i> Open Nested
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 5: Confirmation Dialog -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">5. Confirmation Dialog</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal that requests user confirmation before an action.</p>
+            <button id="example5" class="btn btn-primary">
+              <i class="bi bi-check-circle"></i> Confirm Action
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 6: Image Gallery -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">6. Image Gallery</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal that displays a gallery of images with navigation.</p>
+            <button id="example6" class="btn btn-primary">
+              <i class="bi bi-images"></i> View Gallery
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 7: Video Player Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">7. Video Player</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal that embeds a video player for watching content.</p>
+            <button id="example7" class="btn btn-primary">
+              <i class="bi bi-play-circle"></i> Watch Video
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 8: Wizard/Multi-step -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">8. Multi-step Wizard</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with multiple steps or screens for complex workflows.</p>
+            <button id="example8" class="btn btn-primary">
+              <i class="bi bi-signpost-split"></i> Start Wizard
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 9: Dark Theme Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">9. Dark Theme</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with dark theme styling for low-light environments.</p>
+            <button id="example9" class="btn btn-primary">
+              <i class="bi bi-moon-stars"></i> Dark Mode
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 10: Auto-close Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">10. Auto-close Modal</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal that automatically closes after a set time period.</p>
+            <button id="example10" class="btn btn-primary">
+              <i class="bi bi-alarm"></i> Timed Modal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 11: Refresh Parent Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">11. Refresh Parent</h5>
+          </div>
+          <div class="card-body">
+            <p>Child modal updates parent modal content when closed.</p>
+            <button id="example11" class="btn btn-primary">
+              <i class="bi bi-arrow-repeat"></i> Open Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 12: Close All Button -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">12. Close All Button</h5>
+          </div>
+          <div class="card-body">
+            <p>Nested modals with a button to close all modals at once.</p>
+            <button id="example12" class="btn btn-primary">
+              <i class="bi bi-x-octagon"></i> Close All Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 13: Back Arrow Navigation -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">13. Back Arrow</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with a back arrow for navigating multi-level modals.</p>
+            <button id="example13" class="btn btn-primary">
+              <i class="bi bi-arrow-left-circle"></i> Navigate Back
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 14: Custom Animation -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">14. Custom Animation</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with special entrance and exit animations.</p>
+            <button id="example14" class="btn btn-primary">
+              <i class="bi bi-stars"></i> Animated Modal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 15: Auto-refresh Content -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">15. Auto-refresh</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with content that updates automatically on a timer.</p>
+            <button id="example15" class="btn btn-primary">
+              <i class="bi bi-arrow-clockwise"></i> Live Updates
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 16: Custom Size Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">16. Custom Sizes</h5>
+          </div>
+          <div class="card-body">
+            <p>Various modal sizes from extra small to extra large.</p>
+            <button id="example16" class="btn btn-primary">
+              <i class="bi bi-arrows-angle-expand"></i> Size Options
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 17: Login/Register Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">17. Login/Register</h5>
+          </div>
+          <div class="card-body">
+            <p>Comprehensive login and registration modal workflow.</p>
+            <button id="example17" class="btn btn-primary">
+              <i class="bi bi-person-circle"></i> Account Access
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 18: Map Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">18. Map Modal</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal displaying an interactive SVG map with clickable areas.</p>
+            <button id="example18" class="btn btn-primary">
+              <i class="bi bi-geo-alt"></i> View Map
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 19: Data Table Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">19. Data Table</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal containing a sortable, filterable data table.</p>
+            <button id="example19" class="btn btn-primary">
+              <i class="bi bi-table"></i> View Data
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 20: Custom Theme Modal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">20. Theme Selector</h5>
+          </div>
+          <div class="card-body">
+            <p>Modal with options to choose and apply different themes.</p>
+            <button id="example20" class="btn btn-primary">
+              <i class="bi bi-palette"></i> Choose Theme
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./modal-manager.js"></script> 
+  <script src="main.js"></script>
+</body>
+</html>

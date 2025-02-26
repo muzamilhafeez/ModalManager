@@ -1,4 +1,5 @@
-﻿# Modal Manager
+![stack Overflow](http://lmsotfy.com/so.png)
+ # Modal Manager
 ### Key Points
 - It seems likely that your configuration object will work with a custom modal library, supporting dynamic creation, AJAX content loading, and nested modals up to three levels, which is deeper than typical systems.
 - Research suggests the library can handle form submission, refresh on close, and back navigation, given the implementation details.
